@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bigocto.myapplication2.app.MainActivity">
+
+    <ViewFlipper
+        android:id="@+id/body_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f0f0f0" >
+
+        <include
+            android:id="@+id/layout01"
+            layout="@layout/page1" />
+        <include
+            android:id="@+id/layout02"
+            layout="@layout/page2" />
+
+    </ViewFlipper>
+
+</RelativeLayout>
